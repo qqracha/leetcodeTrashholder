@@ -1,5 +1,5 @@
 import bcrypt
 
-pswrd = b"enigma" # b - bytes type
+pswrd = b"enigmaa" # b - bytes type
 hashed = bcrypt.hashpw(pswrd, bcrypt.gensalt())
 print(hashed)
