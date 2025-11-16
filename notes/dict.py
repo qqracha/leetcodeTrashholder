@@ -1,18 +1,18 @@
-# values
+# Значения
 d = {"user1": "+79481267421",
      "user2": "+79474217492",
      "user3": "+79341849284"}
 
 print(f"Count telephone users: {len(d)}\n--------------") # count keys + value
 
-# news
-d["user1"] = "number is busy"
-print(f"Current news: \nNumber 'user1' was changed - {d["user1"]}\n--------------")
+# Новости
+d["user1"] = "number is busy" # обновляем значение словаря
+print(f"Current news: \nNumber 'user1' was changed - {d['user1']}\n--------------")
 
-# numbers list
+# Телефонная книжка
 user_responce = input("Which user are you interested in?\nUse 'list' for more info.\nEnter user key: ")
 if user_responce == "list":
-    print(f"--------------\nUser list:\n{"\n".join(d.keys())}")
+    print("--------------\nUser list:\n" + "\n".join(d.keys()))
     number = input("--------------\nEnter user key: ")
     try:
         print(f"{number} number: {d[number]}")
