@@ -10,5 +10,9 @@ print(c is b) # False
 
 print(c[1] is b[1] is a) # True
 # Мы обращаемся напрямую к объектам внутри массива и сравниваем их, shallow copy копирует ссылки на объекты
-
-# c = b[:] created a shallow copy, so c and b are not the same object. Both still reference a.
+"""
+x = [[0]] * 3 - cоздаёт один список (shallow copy), а затем три раза повторяет ссылку на один и тот же 
+вложенный список, а не создаёт 3 независимых списка.
+"""
+x = [[0]] * 3
+print(x) # [[0], [0], [0]]
