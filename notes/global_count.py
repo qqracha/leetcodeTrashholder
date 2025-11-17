@@ -1,3 +1,7 @@
+"""
+Пример работы global
+"""
+
 click_count = 0
 def handle_click():
     global click_count

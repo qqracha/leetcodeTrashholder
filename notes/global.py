@@ -1,3 +1,8 @@
+"""
+global - обращается к "глобальной" переменной в файле.
+nonlocal - обращается на слой выше внутри функции.
+"""
+
 import matplotlib.pyplot as plt
 
 x = [1,2,3,4,5]
@@ -7,7 +12,7 @@ def changes():
     global y
     y = [1,2,3,1,5]
 
-changes()
+changes() # Изменяет глобальную переменную 'y' на те значения, которые указаны внутри функции
 print('Apply changes...')
 
 plt.plot(x,y,marker='o',linestyle='-',color='green')

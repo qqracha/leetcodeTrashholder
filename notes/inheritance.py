@@ -1,3 +1,6 @@
+"""
+
+"""
 class Colors:
     def dark(self):
         return 'black'

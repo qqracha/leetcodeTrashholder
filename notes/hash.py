@@ -1,3 +1,7 @@
+"""
+Создание хэша из слова при помощи библиотеки hashlib.
+"""
+
 import hashlib
 
 pswrd = "rogen".encode()
